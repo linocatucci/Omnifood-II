@@ -1,3 +1,9 @@
+/*
+
+color: #3498db;
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -16,4 +22,65 @@ html {
 .row {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin: 0;
+    font-size: 240%;
+    color: #fff;
+    font-weight: 300;
+    line-height: 145%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #3498db;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-full:visited,
+.btn-full:link {
+    color: #fff;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    margin-right: 15px;
+}
+
+.btn-ghost:visited,
+.btn-ghost:link {
+    border: 1px solid #3498db;
+    color: #3498db;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #2487c9;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+    background-color: #2487c9;
+    border: 1px solid #2487c9;
 }
