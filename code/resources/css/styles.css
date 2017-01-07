@@ -4,6 +4,9 @@ color: #3498db;
 
 */
 
+
+/* ---- BASIC AND INITIAL SETUP ---- */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +22,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+
+/* ----- REUSABLE COMPONENTS ---- */
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+
+/* ----- HEADER ----- */
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/hero.jpg);
@@ -48,6 +57,9 @@ h1 {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+
+
+/* ----- BUTTONS ---- */
 
 .btn:link,
 .btn:visited {
