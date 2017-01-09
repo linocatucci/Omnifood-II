@@ -24,6 +24,18 @@ body {
     overflow-x: hidden;
 }
 
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 /* ----- REUSABLE COMPONENTS ---- */
 
@@ -38,6 +50,18 @@ section {
 
 .box {
     padding: 1%;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 
@@ -201,4 +225,90 @@ h3 {
     color: #fff;
     background-color: #adaa1b;
     border: 1px solid #adaa1b;
+}
+
+
+/* ----- SECTION-MEALS ---- */
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.7;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+/* ----- SECTION-HOW-IT-WORKS ---- */
+
+.section-how-it-work{
+	background-color: #f2f2f2;
+}
+
+.step-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.step-box:last-child {
+    padding-left: 3%;
+    text-align: left;
+    margin-top: 70px;
+}
+
+.iphone-img {
+    width: 40%;
+}
+
+.works-steps {
+    margin-bottom: 50px;
+}
+
+.works-steps div {
+    display: inline-block;
+    color: #c9c627;
+    border: 2px solid #c9c627;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 150%;
+    float: left;
+    margin-right: 15px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 40px;
 }
